@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Font import -->
+  <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+  <div class="quiz-container">
+    <h1>Welcome to the Quiz Game!</h1>
+
+    <div class="question">
+      <p>What name is the Governor of Sindh, Pakistan?</p>
+      <label><input type="checkbox" name="question1" value="Kamran Tessori"> Kamran Tessori</label>
+      <label><input type="checkbox" name="question1" value="Saeeduzzaman Siddiqui"> Saeeduzzaman Siddiqui</label>
+      <label><input type="checkbox" name="question1" value="Ishratul Ibad"> Ishratul Ibad</label>
+    </div>
+
+    <div class="question">
+      <p>What is TypeScript?</p>
+      <label><input type="checkbox" name="question2" value="Programming language developed by Microsoft"> Programming language developed by Microsoft</label>
+      <label><input type="checkbox" name="question2" value="A database management system"> A database management system</label>
+      <label><input type="checkbox" name="question2" value="A graphic design software"> A graphic design software</label>
+      <label><input type="checkbox" name="question2" value="A social media platform"> A social media platform</label>
+    </div>
+
+    <div class="question">
+      <p>Which tool is commonly used to compile TypeScript code into JavaScript?</p>
+      <label><input type="checkbox" name="question3" value="Node.js"> Node.js</label>
+      <label><input type="checkbox" name="question3" value="TypeScript Compiler (tsc)"> TypeScript Compiler (tsc)</label>
+      <label><input type="checkbox" name="question3" value="Microsoft"> Microsoft</label>
+    </div>
+
+    <button id="submitButton">Submit</button>
+
+    <div id="result"></div> <!-- Result will be displayed here -->
+  </div>
+
+  <script src="script.js"></script> <!-- Link to the JS file -->
+</body>
+</html>

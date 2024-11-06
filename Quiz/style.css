@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2e2b47;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1d1d1d;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 650px;
+  padding: 40px;
+  background: linear-gradient(135deg, #f5a623, #d81b60);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 5px;
+  animation: bounceIn 1.5s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: translateY(-1000px);
+  }
+  60% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.question {
+  font-size: 1.5rem;
+  color: white;
+  text-align: left;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.7);
+}
+
+button {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.8rem;
+  background: #00e676;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 255, 118, 0.5);
+}
+
+button:hover {
+  background: #00c853;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(1);
+}
+
+#result {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+#result.green {
+  background: linear-gradient(45deg, #66bb6a, #43a047);
+}
+
+#result.orange {
+  background: linear-gradient(45deg, #ff7043, #ff5722);
+}
+
+#result.red {
+  background: linear-gradient(45deg, #f44336, #e53935);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .quiz-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+}
